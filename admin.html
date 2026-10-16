@@ -1,0 +1,36 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Module</title>
+</head>
+<body>
+    <h1>Admin Module</h1>
+
+    <label>Student Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <button onclick="markAttendance()">Mark Present</button>
+
+    <p id="result"></p>
+
+    <script>
+        function markAttendance() {
+            let name = document.getElementById("name").value;
+
+            if (name == "") {
+                alert("Enter student name");
+            } else {
+                document.getElementById("result").innerHTML =
+                    name + " - Present";
+            }
+        }
+    </script>
+
+    <br>
+    <a href="index.html">Home</a>
+</body>
+</html>
+```
